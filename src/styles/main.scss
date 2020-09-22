@@ -33,6 +33,10 @@ h3,
 p {
   margin: 0;
 }
+h2 {
+  margin-left: $base-margin;
+  margin-top: $base-margin;
+}
 
 ul {
   list-style: none;

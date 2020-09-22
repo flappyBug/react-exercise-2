@@ -37,14 +37,16 @@ export default class ProductList extends Component {
     return (
       <div key={category}>
         <h2>{category}</h2>
-        {products.map(({ name, price }, i) => (
-          <Product
-            name={name}
-            price={price}
-            key={i}
-            onAddToCart={this.props.onAddToCart}
-          />
-        ))}
+        <div className="flex-container">
+          {products.map(({ name, price }, i) => (
+            <Product
+              name={name}
+              price={price}
+              key={i}
+              onAddToCart={this.props.onAddToCart}
+            />
+          ))}
+        </div>
       </div>
     );
   }

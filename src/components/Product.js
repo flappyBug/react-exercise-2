@@ -5,7 +5,7 @@ import productImagePlaceholder from '../assets/product_image_placeholder.png';
 const Product = ({ name, price, image, onAddToCart }) => {
   return (
     <div className="product">
-      <h3>{name}</h3>
+      <h3 className="product-title">{name}</h3>
       <img src={image || productImagePlaceholder} alt="Product image"></img>
       <p>{price}</p>
       <button onClick={onAddToCart}>add to cart</button>
