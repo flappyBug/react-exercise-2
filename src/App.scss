@@ -5,3 +5,22 @@
   margin: 80px auto $base-margin auto;
   background-color: $white;
 }
+
+header {
+  padding: $base-padding;
+  background-color: $support-blue;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red-badge {
+  color: $white;
+  background-color: $support-red;
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-style: italic;
+  border-radius: 10rem;
+  margin: 0.2rem;
+}
